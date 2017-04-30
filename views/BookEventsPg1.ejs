@@ -23,6 +23,8 @@
 		<div class="dragon-logo">
 			<img id="dragon-img" class="img-responsive" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1492759791/dragon_parent_1_j2belt.png" />
 		</div>
+
+      	<!-- This div creates a dropdown menu with various navigation options -->
 		<div class="menu">
 			<img id="menu_img"  src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014197/Menu_jwzusk.svg">
 			<div id="myDropdown" class="dropdown-content">
@@ -33,6 +35,8 @@
 				<a id="Getout">Logout</a> </div>
 		</div>
 	</div>
+
+  	<!-- This div contains the navigation tabs between the two functionalities for a parent i.e. Booking events and Checking Activity -->
 	<div class="tab">
 		<button class="tablinks" id="BookEventsButton">
 		<p><img class="tabicons"  src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014195/BookEvents_bv0pvp.svg"> Events</p>
@@ -40,14 +44,24 @@
 		<button class="tablinks" id="checkActivityButton">
 		<p><img class="tabicons" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014197/Historyicon2_ayes8a.svg"> History</p>
 		</button></div>
+
+  	<!-- The section is divided into three parts: mobile header, left section, right-section -->
 	<div class="section">
+
+      <!-- Mobile header is displayed only when viewed on mobile screens (controlled by CSS) -->
 		<div class="mobileheader">
 			<p>Step 1/3: Choose Event</p>
 		</div>
+
+      	<!-- section containing progress bar -->
 		<div class="left-section">
 			<img class="verticalbare" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014199/Vertical_bare_1_kvymiw.png"> </div>
+
+      	<!-- Slideshow using HTML,CSS and Javascript. Wehenever a user clicks on an image, the corresponding event is selected -->
 		<div class="right-section">
 			<div class="slideshow-container">
+
+              	<!-- Individual slide container with image and text -->
 				<div id="firstslide" class="mySlides">
 					<img title="Click to select. Select event to continue" class="slideimg clickAction" src="http://www.eaglesgymnastics.com/uploads/birthday_party.jpg">
 					<div title="Click to select. Select event to continue" class="eventTitle clickAction">
@@ -104,8 +118,11 @@
 						a party where everyone has to dress in a particular way
 						connected with a particular subject</div>
 				</div>
+
+              	<!-- Previous and next buttons -->
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+
 			<div class="dotclass" style="text-align: center">
 				<span class="dot" onclick="currentSlide(1)"></span>
 				<span class="dot" onclick="currentSlide(2)"></span>
@@ -121,6 +138,8 @@
 	<div class="footer">
 		<p>Copyright@TykeTV.com</p>
 	</div>
+
+  	<!-- Code for creating a popup div which contains an image confirming if you want to logout or not -->
 	<div id="popup3" class="popuplg">
 		<img class="dragon" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1492759790/dragon_baby_3_vnpp58.png">
 		<p> Are you leaving me? </p>

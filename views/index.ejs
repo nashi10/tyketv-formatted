@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tyke TV - Welcome!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="../javascripts/Mascotchange.js"></script>
-    <script src="../javascripts/login.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/index.css" />
-    <style>
-      .mySlides {display:none;}
-    </style>
-  </head>
-  <body>
-    <div id="page">
-	    <div class="header">
-        <h1 class="title"><a href="index.htm">Tyke TV</a></h1>
-		    <img id="dragon-img" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1492759791/dragon_baby_1_uet7it.png" alt="Tyke the Dragon"/>
-	    </div>
-      <div class="section">
-        <div class="left_section">
-          <h1>Log in:</h1>
-          <div class="form-group">
-            <input type="email" class="form-control" id="login-email" placeholder="Enter email">
-            <input type="password" class="form-control" id="login-pwd" placeholder="Enter password">
-          </div>
-          <button type="button" class="btn-default" id="login-button"> <p class="enter">ENTER</p></button>
-          <div class="signup">
-            <p>Not a friend of Tyke? <br> <a href="signup.htm">Sign up now!</a></p>
-          </div>
+<head>
+  <title>Tyke TV - Welcome!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="../javascripts/Mascotchange.js"></script>
+  <script src="../javascripts/login.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/index.css" />
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <div class="header">
+      <h1 class="title"><a href="index.htm">Tyke TV</a>
+      </h1>
+      <img id="dragon-img" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1492759791/dragon_baby_1_uet7it.png" alt="Tyke the Dragon" /> </div>
+
+    <!--The section is divided into two subsections, a left section and a right section. The left section contains the input forms for a user to log-in. The right section contains a slideshow with images. -->
+    <div class="section">
+      <div class="left_section">
+        <h1>Log in:</h1>
+        <div class="form-group">
+          <input type="email" class="form-control" id="login-email" placeholder="Enter email">
+          <input type="password" class="form-control" id="login-pwd" placeholder="Enter password"> </div>
+        <button type="button" class="btn-default" id="login-button">
+          <p class="enter">ENTER</p>
+        </button>
+        <div class="signup">
+          <p>Not a friend of Tyke?
+            <br> <a href="signup.htm">Sign up now!</a> </p>
         </div>
-        <div class="right_section">
-          <div class="slideshow">
-              <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014201/threeDragons_ao3v9u.png">
-              <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014201/threeDragons_ao3v9u.png">
-              <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014207/ViewVideos_f3ldwz.png">
-              <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014206/Bookevents_ifvnpw.png">
-              <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014210/Bookevents-2_ytaif7.png">
-          </div>
+      </div>
+      <div class="right_section">
+
+        <!--This is the HTML for the slide show.-->
+        <div class="slideshow"> <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014201/threeDragons_ao3v9u.png"> <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014201/threeDragons_ao3v9u.png"> <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014207/ViewVideos_f3ldwz.png"> <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014206/Bookevents_ifvnpw.png"> <img class="mySlides" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014210/Bookevents-2_ytaif7.png"> </div>
         <script>
           var myIndex = 0;
           carousel();
+
           function carousel() {
             var i;
             var x = document.getElementsByClassName("mySlides");
@@ -48,16 +51,18 @@
               x[i].style.display = "none";
             }
             myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
+            if (myIndex > x.length) {
+              myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 2000);
           }
         </script>
       </div>
     </div>
-	 </div>
- 	 <div class="footer">
-     <p>Copyright@TykeTV.com</p>
-   </div>
-  </body>
+  </div>
+  <div class="footer">
+    <p>Copyright@TykeTV.com</p>
+  </div>
+</body>
 </html>
