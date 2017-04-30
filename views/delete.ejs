@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" rel="stylesheet">
+<title>Tyke TV - Delete Account</title>
+<link href="../stylesheets/deletestyle.css" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/Logoutcss.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../javascripts/Mascotchange.js"></script>
+<script src="../javascripts/delete.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="../javascripts/dropdown1.js"></script>
+
+</head>
+
+<body>
+<div id="page">
+	<div class="header">
+		<h1 class="title"><a href="/selectaccount.htm">Tyke TV</a></h1>
+		<div class="dragon-logo">
+			<img id="dragon-img" class="img-responsive" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1492759791/dragon_parent_1_j2belt.png" />
+		</div>
+		<div class="menu">
+		<img  id="menu_img" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1493014197/Menu_jwzusk.svg">
+		   <div id="myDropdown" class="dropdown-content">
+           <a id="Edprof">Edit Profile</a>
+		   <a id="Deprof">Delete Profile</a>
+           <a id="Chistory">Check History</a>
+           <a id="Bevents">Book Events</a>
+		   <a id="Getout">Logout</a>
+		   </div>
+		</div>
+	</div>
+
+	<div class="section">
+			<h1> Select Image to Remove Profile </h1>
+		<!--This is a container for holding the kids images as buttons-->
+			<div id="checkActivity" class="tabcontent">
+				<ul class="kidList">
+					<% for(var i=0; i<images.length; i++) {%>
+						<li class="childInfo">
+							<div class="childPic">
+								<img class="img-circle" src='<%= images[i] %>' alt="<%= names[i] %>" title="Click to view <%= names[i] %>'s activity"/>
+							</div>
+							<div class="childName">
+								<a><span id="kid-nameUS"><%= names[i]%></span></a></div>
+						</li>
+					<% } %>
+				</ul>
+			</div>
+			<div  class ="headertwo">
+			<h1> Delete Entire Account?
+			 <button class="btn-default" id="delete-accountButton">
+				<h1 class="buttontext">YES</h1>
+				</button>
+			</h1>
+			</div>
+
+	</div>
+	<div class="footer">
+		<p>Copyright@TykeTV.com</p>
+	</div>
+	<div id="popup3" class="popuplg">
+		<img class="dragon" src="https://res.cloudinary.com/dqn5eqmwt/image/upload/v1492759790/dragon_baby_3_vnpp58.png">
+		<p> Are you leaving me? </p>
+			<div class="buttons">
+				<button type="button" class="btn-yes" id="yes-button"> <p class="button">Yes</p></button>
+				<button type="button" class="btn-no" id="no-button" onclick="cancellogout()"> <p class="button">No</p></button>
+			</div>
+	</div>
+</div>
+
+</body>
+
+</html>
